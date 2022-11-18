@@ -1,0 +1,138 @@
+@import url("https://fonts.google.com/specimen/Kumbh+Sans");
+
+:root {
+    /* COLOURS */
+
+    /* BACKGROUND-GRADIENT */
+
+    --clr-gradient-violet: hsl(273, 75%, 66%);
+    --clr-gradient-blue: hsl(240, 73%, 65%);
+
+    /* PRIMARY COLOURS */
+
+    --clr-primary-blue: hsl(238, 29%, 16%);
+    --clr-primary-red: hsl(14, 88%, 65%);
+
+    /* NEUTRAL COLOURS */
+
+    --clr-neutral-gray-200: hsl(240, 5%, 91%);
+    --clr-neutral-gray-600: hsl(240, 6%, 50%);
+    --clr-neutral-gray-800: hsl(237, 12%, 33%);
+
+    /* FONTS */
+
+    --ff-main: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(var(--clr-gradient-violet) 13%, var(--clr-gradient-blue));
+    font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 920px;
+    height: 509px;
+    display: flex;
+    border-radius: 25px;
+    background: url(images/bg-pattern-desktop.svg) white;
+    background-position: -530px -265px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.image-center {
+    overflow: hidden;
+}
+
+.container-img-1 {
+    display: block;
+    margin-top: 4.7rem;
+    margin-left: -4.5rem;
+    width: 500px;
+}
+
+.container-img-2 {
+    margin-left: -121px;
+    margin-top: -200px;
+}
+
+.accordion-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    margin-top: -60px;
+    margin-left: 23px;
+}
+
+.title {
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+.accordion {
+    display: flex;
+    color: #4B4C5F;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.2s;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.accordion:hover {
+    color: var(--clr-primary-red);
+}
+
+.arrow {
+    width: 12px;
+    height: 8px;
+    display: block;
+}
+
+.rotate {
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.up {
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.active {
+    font-weight: 700;
+    color: #1E1F36;
+}
+
+.panel {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid #E8E8EA;
+}
+
+.answer {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #787887;
+    font-weight: 300;
+}
